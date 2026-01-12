@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QDF1sli2daA=",
+  "dgSpecHash": "0tZApMlHjk4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\source\\repos\\WinForms2\\WinForms2\\WinForms2.csproj",
+  "projectFilePath": "C:\\Users\\Student\\Source\\Repos\\ado.net\\WinForms2\\WinForms2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Student\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\Student\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

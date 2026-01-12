@@ -14,7 +14,7 @@ namespace WinForms2
     public partial class Form1 : Form
     {
         #region Feilds      
-        SqlConnection _con = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=School_db;Data Source=(local)\r\n");
+        SqlConnection _con = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=TestDataBase;Data Source=(local)\r\n");
 
         DataTable _dt=new DataTable(); 
         SqlDataAdapter _da;
@@ -25,7 +25,8 @@ namespace WinForms2
             InitializeComponent();
 
         }
-        void GeneratCommands(string SQLSelectCommand) {
+        void GeneratCommands(string SQLSelectCommand) 
+        {
 
             _da = new SqlDataAdapter(SQLSelectCommand, _con); 
             _cmdBuilder = new System.Data.SqlClient.SqlCommandBuilder(_da);
@@ -42,7 +43,7 @@ namespace WinForms2
 
         private void loadbtn_Click(object sender, EventArgs e)
         {
-            GeneratCommands("Select * from EmplTest");
+            GeneratCommands("Select * from Test");
             _dt.Clear();
            _da.Fill(_dt);
            dgvData.DataSource = _dt;

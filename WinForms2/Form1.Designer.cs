@@ -26,7 +26,7 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
             dgvData = new DataGridView();
@@ -82,7 +82,7 @@
 
         #endregion
 
-        private DataGridView dgvData;
+        public DataGridView dgvData;
         private Button savebtn;
         private BindingSource mybindingSource;
         private Button loadbtn;
